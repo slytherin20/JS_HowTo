@@ -1,0 +1,75 @@
+main{
+    font-family: sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    align-self: start;
+}
+.slideshow{
+    width:60%;
+    height: 450px;
+}
+.slide-container,.buttons{
+    width:100%;
+    height: 400px;
+}
+.slide{
+    width:45%;
+    height:400px;
+}
+.buttons{
+    height:50px;
+}
+.hide{
+    display:none;
+}
+.slide-container{
+    position:relative;
+}
+.slide-no-left,.slide-no-right,.caption,.left,.right{
+    position: absolute;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border: transparent;
+}
+.slide-no-left{
+    left: 20px;
+    top: 20px;
+}
+.slide-no-right{
+    right:48%;
+    top: 20px;
+}
+.left,.right{
+    font-size: 30px;
+}
+.left{
+    left:20px;
+    top:48%;
+}
+.right{
+    right: 20px;
+    top:48%;
+}
+.caption{
+    bottom: 20px;
+    left: 48%;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn{
+    width:20px;
+    height:20px;
+    margin:5px;
+    border:transparent;
+    border-radius: 50%;
+    background-color: gainsboro;
+}
+.one{
+    background-color: gray;
+}
