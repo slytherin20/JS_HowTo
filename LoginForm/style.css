@@ -1,0 +1,102 @@
+body{
+    position: relative;
+    max-height: 800px;
+    overflow-y: scroll;
+}
+*{
+    margin:0;
+    padding:0;
+}
+.btn{
+    width:100px;
+    height:50px;
+    background-color: rgb(102, 102, 189);
+    border:transparent;
+    border-radius: 5px;
+    color: white;
+}
+.btn:hover{
+    width: 110px;
+    height:60px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.modal-container{
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow: scroll;
+    display:none;
+    width: 100%;
+    height: 800px;
+}
+.modal{
+    width:600px;
+    height: 700px;
+    background-color: white;
+    margin: 50px auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    animation: showmodal 1s;
+    animation-timing-function: ease-in-out;
+}
+.close-btn{
+    width: 40px;
+    height:40px;
+    font-size: 40px;
+    border:none;
+    align-self: end;
+    background-color: white;
+}
+.avatar{
+    width:300px;
+    height: 300px;
+    margin:20px;
+}
+form{
+    width:95%;
+    display:flex;
+    flex-direction: column;
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+.username,.password,.login-btn{
+    width: 100%;
+    height: 38px;
+    border: solid 1px gainsboro;
+    margin: auto auto;
+}
+.login-btn{
+background-color: green;
+font-weight: bold;
+color: white;
+}
+.remember-label{
+    display: block;
+}
+
+.modal-footer{
+    margin-top: 30px;
+    width:95%;
+    display: flex;
+    justify-content: space-between;
+}
+.close-form-btn{
+    height: 40px;
+    width: 70px;
+    background-color: rgb(180, 62, 62);
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+}
+@keyframes showmodal{
+    from{
+       transform: scale(0);
+    }
+    to{
+       transform: scale(1);
+    }
+}
